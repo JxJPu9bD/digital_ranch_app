@@ -1,35 +1,49 @@
 import 'package:get/get.dart';
 
 class LiveMonitorController extends GetxController {
-  final selectedDate = DateTime.now().obs;
-  final isLoading = false.obs;
-  final monitorData = <String, dynamic>{}.obs;
+  final passiveCardItems = [
+    {
+      'title': '牛群打卡',
+      'icon': 'cattle_card',
+      'color': 0xFF4CAF50,
+    },
+  ].obs;
 
-  void changeDate(DateTime date) {
-    selectedDate.value = date;
-    loadMonitorData();
+  final activeCardItems = [
+    {
+      'title': '更换登记',
+      'icon': 'change_record',
+      'color': 0xFFFFEB3B,
+    },
+    {
+      'title': '基站登记',
+      'icon': 'station_record',
+      'color': 0xFF2196F3,
+    },
+    {
+      'title': '解绑登记',
+      'icon': 'unbind_record',
+      'color': 0xFF9C27B0,
+    },
+    {
+      'title': '佩戴查看',
+      'icon': 'wear_check',
+      'color': 0xFFF44336,
+    },
+    {
+      'title': '佩戴登记',
+      'icon': 'wear_record',
+      'color': 0xFF4CAF50,
+    },
+  ].obs;
+
+  void onPassiveCardTap(Map<String, dynamic> item) {
+    // TODO: 实现无源打卡项点击处理
+    Get.snackbar('提示', '点击了${item['title']}');
   }
 
-  void loadMonitorData() {
-    isLoading.value = true;
-    // TODO: 从API获取监管数据
-    Future.delayed(const Duration(seconds: 1), () {
-      // 模拟数据
-      monitorData.value = {
-        '体温': '38.5°C',
-        '心率': '75次/分',
-        '呼吸': '20次/分',
-        '活动量': '正常',
-        '采食量': '12.5kg',
-        '饮水量': '40L',
-      };
-      isLoading.value = false;
-    });
-  }
-
-  @override
-  void onInit() {
-    super.onInit();
-    loadMonitorData();
+  void onActiveCardTap(Map<String, dynamic> item) {
+    // TODO: 实现有源打卡项点击处理
+    Get.snackbar('提示', '点击了${item['title']}');
   }
 } 
