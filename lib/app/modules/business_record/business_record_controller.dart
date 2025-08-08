@@ -10,87 +10,87 @@ class BusinessRecordController extends GetxController with GetSingleTickerProvid
   final dailyBusinessItems = [
     {
       'title': '批量入场',
-      'icon': 'batch_entry',
+      'icon': 'ic_plrc',
       'color': 0xFFFFB74D,
     },
     {
       'title': '入场登记',
-      'icon': 'entry_record',
+      'icon': 'ic_rcdj',
       'color': 0xFFFFEB3B,
     },
     {
       'title': '离场登记',
-      'icon': 'exit_record',
+      'icon': 'ic_lcdj',
       'color': 0xFF64B5F6,
     },
     {
       'title': '转舍登记',
-      'icon': 'transfer_record',
+      'icon': 'ic_zsdj',
       'color': 0xFF4CAF50,
     },
     {
       'title': '耳号更换',
-      'icon': 'ear_tag_change',
+      'icon': 'ic_ehgh',
       'color': 0xFF2196F3,
     },
     {
       'title': '耳牌补发',
-      'icon': 'ear_tag_reissue',
+      'icon': 'ic_epbf',
       'color': 0xFFFFEB3B,
     },
     {
       'title': '设备绑定',
-      'icon': 'device_binding',
+      'icon': 'ic_sbbd',
       'color': 0xFF3F51B5,
     },
     {
       'title': '档案登记',
-      'icon': 'file_record',
+      'icon': 'ic_dadj',
       'color': 0xFF64B5F6,
     },
     {
       'title': '消毒登记',
-      'icon': 'disinfection_record',
+      'icon': 'ic_xddj',
       'color': 0xFFFFB74D,
     },
     {
       'title': '养殖档案',
-      'icon': 'breeding_file',
+      'icon': 'ic_yzda',
       'color': 0xFFFFEB3B,
     },
     {
       'title': '围产登记',
-      'icon': 'perinatal_record',
+      'icon': 'ic_wcdj',
       'color': 0xFF9C27B0,
     },
     {
       'title': '生长指标登记',
-      'icon': 'growth_record',
+      'icon': 'ic_szzbdj',
       'color': 0xFF64B5F6,
     },
     {
       'title': '体况登记',
-      'icon': 'condition_record',
+      'icon': 'ic_tkdj',
       'color': 0xFF4CAF50,
     },
     {
       'title': '单兵找牛',
-      'icon': 'find_cattle',
+      'icon': 'ic_dbzn',
       'color': 0xFF2196F3,
     },
     {
       'title': '牛群盘点',
-      'icon': 'cattle_inventory',
+      'icon': 'ic_nqpd',
       'color': 0xFFFFB74D,
     },
     {
       'title': '视频监控',
-      'icon': 'video_monitor',
+      'icon': 'ic_spjk',
       'color': 0xFFFFEB3B,
     },
     {
       'title': '巡更登记',
-      'icon': 'patrol_record',
+      'icon': 'ic_xgdj',
       'color': 0xFF3F51B5,
     },
   ].obs;
@@ -98,37 +98,37 @@ class BusinessRecordController extends GetxController with GetSingleTickerProvid
   final breedingBusinessItems = [
     {
       'title': '发情登记',
-      'icon': 'estrus_record',
+      'icon': 'ic_fqdj',
       'color': 0xFFF44336,
     },
     {
       'title': '配种登记',
-      'icon': 'breeding_record',
+      'icon': 'ic_pzdj',
       'color': 0xFF2196F3,
     },
     {
       'title': '初检登记',
-      'icon': 'first_check',
+      'icon': 'ic_cjdj',
       'color': 0xFF4CAF50,
     },
     {
       'title': '复检登记',
-      'icon': 'recheck',
+      'icon': 'ic_fjdj',
       'color': 0xFF2196F3,
     },
     {
       'title': '流产登记',
-      'icon': 'abortion_record',
+      'icon': 'ic_lcdj',
       'color': 0xFFF44336,
     },
     {
       'title': '禁配解禁',
-      'icon': 'breeding_ban',
+      'icon': 'ic_jpjj',
       'color': 0xFFF44336,
     },
     {
       'title': '停配解停',
-      'icon': 'breeding_stop',
+      'icon': 'ic_tpjt',
       'color': 0xFFF44336,
     },
   ].obs;
@@ -136,17 +136,17 @@ class BusinessRecordController extends GetxController with GetSingleTickerProvid
   final calvingBusinessItems = [
     {
       'title': '产犊登记',
-      'icon': 'calving_record',
+      'icon': 'ic_cddj',
       'color': 0xFF4CAF50,
     },
     {
       'title': '犊牛登记',
-      'icon': 'calf_record',
+      'icon': 'ic_dndj',
       'color': 0xFFFFEB3B,
     },
     {
       'title': '断奶登记',
-      'icon': 'weaning_record',
+      'icon': 'ic_dndj',
       'color': 0xFF4CAF50,
     },
   ].obs;
@@ -154,37 +154,37 @@ class BusinessRecordController extends GetxController with GetSingleTickerProvid
   final veterinaryBusinessItems = [
     {
       'title': '疾病揭发',
-      'icon': 'disease_report',
+      'icon': 'ic_jbjf',
       'color': 0xFF4CAF50,
     },
     {
       'title': '确诊治疗',
-      'icon': 'diagnosis_treatment',
+      'icon': 'ic_qzzl',
       'color': 0xFF9C27B0,
     },
     {
       'title': '转归处理',
-      'icon': 'transfer_treatment',
+      'icon': 'ic_zgcl',
       'color': 0xFF4CAF50,
     },
     {
       'title': '产后护理',
-      'icon': 'postpartum_care',
+      'icon': 'ic_chhl',
       'color': 0xFF9C27B0,
     },
     {
       'title': '免疫登记',
-      'icon': 'immune_record',
+      'icon': 'ic_mydj',
       'color': 0xFF9C27B0,
     },
     {
       'title': '检疫登记',
-      'icon': 'quarantine_record',
+      'icon': 'ic_jydj',
       'color': 0xFF4CAF50,
     },
     {
       'title': '免疫检疫',
-      'icon': 'immune_quarantine',
+      'icon': 'ic_myjy',
       'color': 0xFF4CAF50,
     },
   ].obs;
@@ -192,27 +192,27 @@ class BusinessRecordController extends GetxController with GetSingleTickerProvid
   final intelligentDeviceItems = [
     {
       'title': '环境监测',
-      'icon': 'environment_monitor',
+      'icon': 'ic_hjjc',
       'color': 0xFFFFEB3B,
     },
     {
       'title': '用水管理',
-      'icon': 'water_management',
+      'icon': 'ic_ysgl',
       'color': 0xFF9C27B0,
     },
     {
       'title': '用电管理',
-      'icon': 'electricity_management',
+      'icon': 'ic_ydgl',
       'color': 0xFFFFEB3B,
     },
     {
       'title': '水槽监测',
-      'icon': 'trough_monitor',
+      'icon': 'ic_scjc',
       'color': 0xFF9C27B0,
     },
     {
       'title': '设备预警',
-      'icon': 'device_alert',
+      'icon': 'ic_sbyj',
       'color': 0xFFFFEB3B,
     },
   ].obs;
@@ -220,22 +220,22 @@ class BusinessRecordController extends GetxController with GetSingleTickerProvid
   final feedingBusinessItems = [
     {
       'title': '配方参数',
-      'icon': 'formula_params',
+      'icon': 'ic_pfcs',
       'color': 0xFFFFEB3B,
     },
     {
       'title': '车次饲喂',
-      'icon': 'feeding_schedule',
+      'icon': 'ic_ccsw',
       'color': 0xFFFFEB3B,
     },
     {
       'title': '饲喂配方',
-      'icon': 'feeding_formula',
+      'icon': 'ic_swpf',
       'color': 0xFF4CAF50,
     },
     {
       'title': '饲喂制备',
-      'icon': 'feeding_preparation',
+      'icon': 'ic_swzb',
       'color': 0xFFFFEB3B,
     },
   ].obs;
@@ -243,37 +243,37 @@ class BusinessRecordController extends GetxController with GetSingleTickerProvid
   final inputBusinessItems = [
     {
       'title': '入库登记',
-      'icon': 'storage_in',
+      'icon': 'ic_rkdj',
       'color': 0xFFF44336,
     },
     {
       'title': '入库审核',
-      'icon': 'storage_in_review',
+      'icon': 'ic_rksh',
       'color': 0xFF4CAF50,
     },
     {
       'title': '领用登记',
-      'icon': 'usage_record',
+      'icon': 'ic_lydj',
       'color': 0xFFF44336,
     },
     {
       'title': '领用审核',
-      'icon': 'usage_review',
+      'icon': 'ic_lysh',
       'color': 0xFF4CAF50,
     },
     {
       'title': '库存预警',
-      'icon': 'inventory_alert',
+      'icon': 'ic_kcyj',
       'color': 0xFF4CAF50,
     },
     {
       'title': '过期预警',
-      'icon': 'expiry_alert',
+      'icon': 'ic_gqyj',
       'color': 0xFFF44336,
     },
     {
       'title': '库存查询',
-      'icon': 'inventory_query',
+      'icon': 'ic_kccx',
       'color': 0xFFF44336,
     },
   ].obs;
@@ -318,7 +318,163 @@ class BusinessRecordController extends GetxController with GetSingleTickerProvid
   }
 
   void onItemTap(Map<String, dynamic> item) {
-    // TODO: 实现业务项点击处理
-    Get.snackbar('提示', '点击了${item['title']}');
+    // 根据业务类型跳转到对应页面
+    switch (item['icon']) {
+      case 'ic_plrc':
+        Get.toNamed('/business-record/batch-entry');
+        break;
+      case 'ic_rcdj':
+        Get.toNamed('/business-record/entry-record');
+        break;
+      case 'ic_lcdj':
+        Get.toNamed('/business-record/exit-record');
+        break;
+      case 'ic_zsdj':
+        Get.toNamed('/business-record/transfer-record');
+        break;
+      case 'ic_ehgh':
+        Get.toNamed('/business-record/ear-tag-change');
+        break;
+      case 'ic_epbf':
+        Get.toNamed('/business-record/ear-tag-reissue');
+        break;
+      case 'ic_sbbd':
+        Get.toNamed('/business-record/device-binding');
+        break;
+      case 'ic_dadj':
+        Get.toNamed('/business-record/file-record');
+        break;
+      case 'ic_xddj':
+        Get.toNamed('/business-record/disinfection-record');
+        break;
+      case 'ic_yzda':
+        Get.toNamed('/business-record/breeding-file');
+        break;
+      case 'ic_wcdj':
+        Get.toNamed('/business-record/perinatal-record');
+        break;
+      case 'ic_szzbdj':
+        Get.toNamed('/business-record/growth-record');
+        break;
+      case 'ic_tkdj':
+        Get.toNamed('/business-record/condition-record');
+        break;
+      case 'ic_dbzn':
+        Get.toNamed('/business-record/find-cattle');
+        break;
+      case 'ic_nqpd':
+        Get.toNamed('/business-record/cattle-inventory');
+        break;
+      case 'ic_spjk':
+        Get.toNamed('/business-record/video-monitor');
+        break;
+      case 'ic_xgdj':
+        Get.toNamed('/business-record/patrol-record');
+        break;
+      // 繁育业务
+      case 'ic_fqdj':
+        Get.toNamed('/business-record/estrus-record');
+        break;
+      case 'ic_pzdj':
+        Get.toNamed('/business-record/breeding-record');
+        break;
+      case 'ic_cjdj':
+        Get.toNamed('/business-record/first-check');
+        break;
+      case 'ic_fjdj':
+        Get.toNamed('/business-record/recheck');
+        break;
+      case 'ic_lcdj':
+        Get.toNamed('/business-record/abortion-record');
+        break;
+      case 'ic_jpjj':
+        Get.toNamed('/business-record/breeding-ban');
+        break;
+      case 'ic_tpjt':
+        Get.toNamed('/business-record/breeding-stop');
+        break;
+      // 产犊业务
+      case 'ic_cddj':
+        Get.toNamed('/business-record/calving-record');
+        break;
+      case 'ic_dndj':
+        Get.toNamed('/business-record/calf-record');
+        break;
+      // 兽医业务
+      case 'ic_jbjf':
+        Get.toNamed('/business-record/disease-report');
+        break;
+      case 'ic_qzzl':
+        Get.toNamed('/business-record/diagnosis-treatment');
+        break;
+      case 'ic_zgcl':
+        Get.toNamed('/business-record/transfer-treatment');
+        break;
+      case 'ic_chhl':
+        Get.toNamed('/business-record/postpartum-care');
+        break;
+      case 'ic_mydj':
+        Get.toNamed('/business-record/immune-record');
+        break;
+      case 'ic_jydj':
+        Get.toNamed('/business-record/quarantine-record');
+        break;
+      case 'ic_myjy':
+        Get.toNamed('/business-record/immune-quarantine');
+        break;
+      // 智能设备
+      case 'ic_hjjc':
+        Get.toNamed('/business-record/environment-monitor');
+        break;
+      case 'ic_ysgl':
+        Get.toNamed('/business-record/water-management');
+        break;
+      case 'ic_ydgl':
+        Get.toNamed('/business-record/electricity-management');
+        break;
+      case 'ic_scjc':
+        Get.toNamed('/business-record/trough-monitor');
+        break;
+      case 'ic_sbyj':
+        Get.toNamed('/business-record/device-alert');
+        break;
+      // 饲喂业务
+      case 'ic_pfcs':
+        Get.toNamed('/business-record/formula-params');
+        break;
+      case 'ic_ccsw':
+        Get.toNamed('/business-record/feeding-schedule');
+        break;
+      case 'ic_swpf':
+        Get.toNamed('/business-record/feeding-formula');
+        break;
+      case 'ic_swzb':
+        Get.toNamed('/business-record/feeding-preparation');
+        break;
+      // 投入品业务
+      case 'ic_rkdj':
+        Get.toNamed('/business-record/storage-in');
+        break;
+      case 'ic_rksh':
+        Get.toNamed('/business-record/storage-in-review');
+        break;
+      case 'ic_lydj':
+        Get.toNamed('/business-record/usage-record');
+        break;
+      case 'ic_lysh':
+        Get.toNamed('/business-record/usage-review');
+        break;
+      case 'ic_kcyj':
+        Get.toNamed('/business-record/inventory-alert');
+        break;
+      case 'ic_gqyj':
+        Get.toNamed('/business-record/expiry-alert');
+        break;
+      case 'ic_kccx':
+        Get.toNamed('/business-record/inventory-query');
+        break;
+      default:
+        Get.snackbar('提示', '功能开发中');
+    }
   }
 } 

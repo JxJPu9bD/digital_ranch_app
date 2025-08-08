@@ -99,10 +99,17 @@ class BusinessRecordView extends GetView<BusinessRecordController> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    Icons.business,  // 临时使用通用图标
-                    size: 28.w,
-                    color: Color(item['color'] as int),
+                  Image.asset(
+                    'assets/icons/${item['icon']}.png',
+                    width: 28.w,
+                    height: 28.w,
+                    errorBuilder: (context, error, stackTrace) {
+                      return Icon(
+                        Icons.business,
+                        size: 28.w,
+                        color: Color(item['color'] as int),
+                      );
+                    },
                   ),
                   SizedBox(height: 8.h),
                   Text(

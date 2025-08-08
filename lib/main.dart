@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           title: '数字肉牛',
           theme: AppTheme.lightTheme,
           initialRoute: AppPages.INITIAL,
-          getPages: AppPages.routes,
+          getPages: AppPages.pages,
           defaultTransition: Transition.fadeIn,
           debugShowCheckedModeBanner: false,
         );

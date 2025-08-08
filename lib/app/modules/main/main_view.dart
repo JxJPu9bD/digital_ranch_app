@@ -29,25 +29,30 @@ class MainView extends GetView<MainController> {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: AppTheme.primaryColor,
         unselectedItemColor: Colors.grey,
-        items: const [
+        items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Image.asset('assets/icons/tab_home_no.png', width: 21, height: 21),
+            activeIcon: Image.asset('assets/icons/tab_home_sel.png', width: 21, height: 21),
             label: '首页',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
+            icon: Image.asset('assets/icons/tab_xxcx_no.png', width: 21, height: 21),
+            activeIcon: Image.asset('assets/icons/tab_xxcx_sel.png', width: 21, height: 21),
             label: '信息查询',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.assignment),
+            icon: Image.asset('assets/icons/tab_ywdj_no.png', width: 21, height: 21),
+            activeIcon: Image.asset('assets/icons/tab_ywdj_sel.png', width: 21, height: 21),
             label: '业务登记',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.monitor),
+            icon: Image.asset('assets/icons/tab_htjg_no.png', width: 21, height: 21),
+            activeIcon: Image.asset('assets/icons/tab_htjg_sel.png', width: 21, height: 21),
             label: '活体监管',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
+            icon: Image.asset('assets/icons/tab_person_no.png', width: 21, height: 21),
+            activeIcon: Image.asset('assets/icons/tab_person_sel.png', width: 21, height: 21),
             label: '我的',
           ),
         ],
