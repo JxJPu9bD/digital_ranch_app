@@ -1,4 +1,4 @@
-import 'package#get/get.dart';
+import 'package:get/get.dart';
 import 'breeding_stop_controller.dart';
 
 class BreedingStopBinding extends Bindings {
