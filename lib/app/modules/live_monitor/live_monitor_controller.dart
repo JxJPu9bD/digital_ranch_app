@@ -4,7 +4,7 @@ class LiveMonitorController extends GetxController {
   final passiveCardItems = [
     {
       'title': '牛群打卡',
-      'icon': 'cattle_card',
+      'icon': 'ic_nqdk',
       'color': 0xFF4CAF50,
     },
   ].obs;
@@ -12,27 +12,27 @@ class LiveMonitorController extends GetxController {
   final activeCardItems = [
     {
       'title': '更换登记',
-      'icon': 'change_record',
+      'icon': 'ic_ghdj',
       'color': 0xFFFFEB3B,
     },
     {
       'title': '基站登记',
-      'icon': 'station_record',
+      'icon': 'ic_jzdj',
       'color': 0xFF2196F3,
     },
     {
       'title': '解绑登记',
-      'icon': 'unbind_record',
+      'icon': 'ic_jbdj',
       'color': 0xFF9C27B0,
     },
     {
       'title': '佩戴查看',
-      'icon': 'wear_check',
+      'icon': 'ic_pdck',
       'color': 0xFFF44336,
     },
     {
       'title': '佩戴登记',
-      'icon': 'wear_record',
+      'icon': 'ic_pddj',
       'color': 0xFF4CAF50,
     },
   ].obs;

@@ -29,6 +29,10 @@ class HomeView extends GetView<HomeController> {
             _buildStatsSection(),
             _buildQuickAccessSection(),
             _buildTaskSection(),
+            _buildIconGridSection('数据分析', 'assets/icons/title_sjfx.png', controller.dataAnalysisItems),
+            _buildIconGridSection('数据报表', 'assets/icons/title_sjbb.png', controller.dataReportItems),
+            _buildIconGridSection('数据汇报表', 'assets/icons/title_sjhbb.png', controller.dataSummaryItems),
+            _buildIconGridSection('结构图表', 'assets/icons/title_jgtb.png', controller.structureChartItems),
           ],
         ),
       ),
@@ -318,6 +322,81 @@ class HomeView extends GetView<HomeController> {
             ),
           ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildIconGridSection(String title, String titleIcon, List<Map<String, String>> items) {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Image.asset(titleIcon, width: 28.w, height: 28.w, errorBuilder: (_, __, ___) => Icon(Icons.insert_chart, color: AppTheme.primaryColor, size: 24.w)),
+              SizedBox(width: 8.w),
+              Text(
+                title,
+                style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.bold, color: AppTheme.textColor),
+              ),
+            ],
+          ),
+          SizedBox(height: 12.h),
+          GridView.builder(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 4,
+              mainAxisSpacing: 16.h,
+              crossAxisSpacing: 16.w,
+              childAspectRatio: 0.9,
+            ),
+            itemCount: items.length,
+            itemBuilder: (context, index) {
+              final item = items[index];
+              return _buildIconItem(item['title']!, item['icon']!, () => controller.onHomeItemTap(item));
+            },
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildIconItem(String title, String iconName, VoidCallback onTap) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(8),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            blurRadius: 10,
+            offset: const Offset(0, 5),
+          ),
+        ],
+      ),
+      child: InkWell(
+        onTap: onTap,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              'assets/icons/$iconName.png',
+              width: 48.w,
+              height: 48.w,
+              errorBuilder: (_, __, ___) => Icon(Icons.widgets, color: AppTheme.primaryColor, size: 28.w),
+            ),
+            SizedBox(height: 8.h),
+            Text(
+              title,
+              style: TextStyle(fontSize: 12.sp, color: AppTheme.textColor),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              textAlign: TextAlign.center,
+            ),
+          ],
+        ),
       ),
     );
   }

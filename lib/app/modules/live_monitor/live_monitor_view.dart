@@ -16,9 +16,9 @@ class LiveMonitorView extends GetView<LiveMonitorController> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _buildSectionTitle('无源打卡管理', Icons.nfc),
+            _buildSectionTitle('无源打卡管理', 'title_nqdk'),
             _buildPassiveCardGrid(),
-            _buildSectionTitle('有源打卡管理', Icons.wifi),
+            _buildSectionTitle('有源打卡管理', 'title_nqdk'),
             _buildActiveCardGrid(),
           ],
         ),
@@ -26,15 +26,15 @@ class LiveMonitorView extends GetView<LiveMonitorController> {
     );
   }
 
-  Widget _buildSectionTitle(String title, IconData icon) {
+  Widget _buildSectionTitle(String title, String icon) {
     return Padding(
       padding: EdgeInsets.fromLTRB(16.w, 16.h, 16.w, 8.h),
       child: Row(
         children: [
-          Icon(
-            icon,
-            color: AppTheme.primaryColor,
-            size: 20.w,
+          Image.asset(
+            'assets/icons/${icon}.png',
+            width: 28.w,
+            height: 28.w,
           ),
           SizedBox(width: 8.w),
           Text(
@@ -141,10 +141,10 @@ class LiveMonitorView extends GetView<LiveMonitorController> {
                 color: Color(item['color'] as int).withOpacity(0.1),
                 shape: BoxShape.circle,
               ),
-              child: Icon(
-                Icons.nfc,  // 临时使用通用图标
-                color: Color(item['color'] as int),
-                size: 24.w,
+              child: Image.asset(
+                'assets/icons/${item['icon']}.png',
+                width: 48.w,
+                height: 48.w,
               ),
             ),
             SizedBox(height: 8.h),

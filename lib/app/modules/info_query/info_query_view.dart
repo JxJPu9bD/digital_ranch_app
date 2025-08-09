@@ -64,10 +64,10 @@ class InfoQueryView extends GetView<InfoQueryController> {
                     padding: EdgeInsets.symmetric(horizontal: 16.w),
                     child: Row(
                       children: [
-                        Icon(
-                          Icons.remove_red_eye,
-                          color: AppTheme.primaryColor,
-                          size: 20.w,
+                        Image.asset(
+                          'assets/icons/title_ywyj.png',
+                          width: 28.w,
+                          height: 28.w,
                         ),
                         SizedBox(width: 8.w),
                         Text(
@@ -103,10 +103,10 @@ class InfoQueryView extends GetView<InfoQueryController> {
                     padding: EdgeInsets.symmetric(horizontal: 16.w),
                     child: Row(
                       children: [
-                        Icon(
-                          Icons.assignment,
-                          color: AppTheme.primaryColor,
-                          size: 20.w,
+                        Image.asset(
+                          'assets/icons/title_ywyj.png',
+                          width: 28.w,
+                          height: 28.w,
                         ),
                         SizedBox(width: 8.w),
                         Text(
@@ -166,11 +166,13 @@ class InfoQueryView extends GetView<InfoQueryController> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Stack(
+              clipBehavior: Clip.none,
+              alignment: Alignment.center,
               children: [
-                Icon(
-                  Icons.notifications,
-                  color: Color(alert['color'] as int),
-                  size: 32.w,
+                Image.asset(
+                  'assets/icons/${alert['icon']}.png',
+                  width: 48.w,
+                  height: 48.w,
                 ),
                 if (alert['count'] != '0')
                   Positioned(
@@ -228,10 +230,10 @@ class InfoQueryView extends GetView<InfoQueryController> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
-              Icons.business,
-              color: Color(business['color'] as int),
-              size: 32.w,
+            Image.asset(
+              'assets/icons/${business['icon']}.png',
+              width: 48.w,
+              height: 48.w,
             ),
             SizedBox(height: 8.h),
             Text(

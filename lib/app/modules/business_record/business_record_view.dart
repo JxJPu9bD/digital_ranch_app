@@ -101,12 +101,12 @@ class BusinessRecordView extends GetView<BusinessRecordController> {
                 children: [
                   Image.asset(
                     'assets/icons/${item['icon']}.png',
-                    width: 28.w,
-                    height: 28.w,
+                    width: 48.w,
+                    height: 48.w,
                     errorBuilder: (context, error, stackTrace) {
                       return Icon(
                         Icons.business,
-                        size: 28.w,
+                        size: 48.w,
                         color: Color(item['color'] as int),
                       );
                     },
