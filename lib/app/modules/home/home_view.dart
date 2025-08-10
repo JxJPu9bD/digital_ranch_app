@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/common_appbar.dart';
 import 'home_controller.dart';
+import '../../routes/app_pages.dart';
 
 class HomeView extends GetView<HomeController> {
   const HomeView({Key? key}) : super(key: key);
@@ -151,7 +152,7 @@ class HomeView extends GetView<HomeController> {
               'News Advisory',
               Icons.newspaper,
               () {
-                // TODO: 实现新闻资讯功能
+                Get.toNamed(Routes.NEWS_LIST);
               },
             ),
           ),
@@ -162,7 +163,7 @@ class HomeView extends GetView<HomeController> {
               'Online Consultation',
               Icons.medical_services,
               () {
-                // TODO: 实现在线问诊功能
+                Get.toNamed(Routes.CONSULTATION_LIST);
               },
             ),
           ),
@@ -275,6 +276,45 @@ class HomeView extends GetView<HomeController> {
                 itemCount: controller.taskStats.length,
                 itemBuilder: (context, index) {
                   final entry = controller.taskStats.entries.elementAt(index);
+                  return _buildTaskCard(entry.key, entry.value.toString());
+                },
+              ),
+
+              SizedBox(height: 16.h),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    '已完成工作',
+                    style: TextStyle(
+                      fontSize: 16.sp,
+                      fontWeight: FontWeight.bold,
+                      color: AppTheme.textColor,
+                    ),
+                  ),
+                  Text(
+                    '近一周',
+                    style: TextStyle(
+                      fontSize: 12.sp,
+                      color: Colors.grey[600],
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 16.h),
+              GridView.builder(
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 3,
+                  mainAxisSpacing: 16.w,
+                  crossAxisSpacing: 16.w,
+                  mainAxisExtent: 80.h,
+                ),
+                itemCount: controller.completedTaskStats.length,
+                itemBuilder: (context, index) {
+                  final entry = controller.completedTaskStats.entries.elementAt(index);
                   return _buildTaskCard(entry.key, entry.value.toString());
                 },
               ),

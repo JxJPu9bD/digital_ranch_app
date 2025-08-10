@@ -97,4 +97,12 @@ abstract class Routes {
   static const INVENTORY_ALERT = '/business-record/inventory-alert';
   static const EXPIRY_ALERT = '/business-record/expiry-alert';
   static const INVENTORY_QUERY = '/business-record/inventory-query';
+
+  // 新闻相关路由
+  static const NEWS_LIST = '/home/news/list';
+  static const NEWS_DETAIL = '/home/news/detail';
+
+  // 在线问诊相关路由
+  static const CONSULTATION_LIST = '/home/consultation/list';
+  static const CONSULTATION_PUBLISH = '/home/consultation/publish';
 }

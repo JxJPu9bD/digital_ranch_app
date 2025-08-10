@@ -8,6 +8,7 @@ class HomeController extends GetxController {
   final newCattle = 0.obs;
   final leavingCattle = 0.obs;
   
+  //待完成工作
   final taskStats = {
     '待配': 0.obs,
     '初检': 99.obs,
@@ -15,6 +16,10 @@ class HomeController extends GetxController {
     '待产': 0.obs,
     '疾病治疗': 89.obs,
     '断奶': 99.obs,
+  }.obs;
+
+  // 已完成工作
+  final completedTaskStats = {
     '发情': 99.obs,
     '配种': 99.obs,
     '孕检': 99.obs,

@@ -37,6 +37,18 @@ import '../modules/business_record/sub_pages/video_monitor/video_monitor_binding
 import '../modules/business_record/sub_pages/video_monitor/video_monitor_view.dart';
 import '../modules/business_record/sub_pages/patrol_record/patrol_record_binding.dart';
 import '../modules/business_record/sub_pages/patrol_record/patrol_record_view.dart';
+
+// 新闻相关页面
+import '../modules/home/sub_pages/news/news_list/news_list_binding.dart';
+import '../modules/home/sub_pages/news/news_list/news_list_view.dart';
+import '../modules/home/sub_pages/news/news_detail/news_detail_binding.dart';
+import '../modules/home/sub_pages/news/news_detail/news_detail_view.dart';
+
+// 在线问诊相关页面
+import '../modules/home/sub_pages/consultation/consultation_list/consultation_list_binding.dart';
+import '../modules/home/sub_pages/consultation/consultation_list/consultation_list_view.dart';
+import '../modules/home/sub_pages/consultation/consultation_publish/consultation_publish_binding.dart';
+import '../modules/home/sub_pages/consultation/consultation_publish/consultation_publish_view.dart';
 import '../modules/home/sub_pages/analysis/cattle_structure/cattle_structure_binding.dart';
 import '../modules/home/sub_pages/analysis/cattle_structure/cattle_structure_view.dart';
 import '../modules/home/sub_pages/analysis/cattle_analysis/cattle_analysis_binding.dart';
@@ -218,6 +230,30 @@ abstract class AppPages {
       name: Routes.PATROL_RECORD,
       page: () => const PatrolRecordView(),
       binding: PatrolRecordBinding(),
+    ),
+
+    // 新闻相关页面
+    GetPage(
+      name: Routes.NEWS_LIST,
+      page: () => const NewsListView(),
+      binding: NewsListBinding(),
+    ),
+    GetPage(
+      name: Routes.NEWS_DETAIL,
+      page: () => const NewsDetailView(),
+      binding: NewsDetailBinding(),
+    ),
+
+    // 在线问诊相关页面
+    GetPage(
+      name: Routes.CONSULTATION_LIST,
+      page: () => const ConsultationListView(),
+      binding: ConsultationListBinding(),
+    ),
+    GetPage(
+      name: Routes.CONSULTATION_PUBLISH,
+      page: () => const ConsultationPublishView(),
+      binding: ConsultationPublishBinding(),
     ),
   ];
 }
