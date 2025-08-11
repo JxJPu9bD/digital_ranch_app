@@ -34,6 +34,10 @@ abstract class Routes {
   static const HOME_CATTLE_PRODUCTION_DATA = '/home/chart/cattle-production-data';
   static const HOME_ONE_YEAR_MORTALITY = '/home/chart/one-year-mortality';
 
+  // 首页功能：业务 - 繁育业务
+  static const HOME_BREEDING_BUSINESS = '/home/business/breeding';
+  static const HOME_DISEASE_HEALTH = '/home/business/disease-health';
+
   // 业务登记等（已存在）
   static const BATCH_ENTRY = '/business-record/batch-entry';
   static const ENTRY_RECORD = '/business-record/entry-record';
