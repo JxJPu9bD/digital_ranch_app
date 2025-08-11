@@ -37,6 +37,7 @@ abstract class Routes {
   // 首页功能：业务 - 繁育业务
   static const HOME_BREEDING_BUSINESS = '/home/business/breeding';
   static const HOME_DISEASE_HEALTH = '/home/business/disease-health';
+  static const HOME_CALF_BUSINESS = '/home/business/calf';
 
   // 业务登记等（已存在）
   static const BATCH_ENTRY = '/business-record/batch-entry';

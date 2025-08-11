@@ -103,6 +103,8 @@ import '../modules/home/sub_pages/business/breeding_business/breeding_business_b
 import '../modules/home/sub_pages/business/breeding_business/breeding_business_view.dart';
 import '../modules/home/sub_pages/business/disease_health/disease_health_binding.dart';
 import '../modules/home/sub_pages/business/disease_health/disease_health_view.dart';
+import '../modules/home/sub_pages/business/calf_business/calf_business_binding.dart';
+import '../modules/home/sub_pages/business/calf_business/calf_business_view.dart';
 
 part 'app_routes.dart';
 
@@ -155,6 +157,8 @@ abstract class AppPages {
     GetPage(name: Routes.HOME_BREEDING_BUSINESS, page: () => const BreedingBusinessView(), binding: BreedingBusinessBinding()),
     // 首页功能：业务 - 疾病健康
     GetPage(name: Routes.HOME_DISEASE_HEALTH, page: () => const DiseaseHealthView(), binding: DiseaseHealthBinding()),
+    // 首页功能：业务 - 犊牛业务
+    GetPage(name: Routes.HOME_CALF_BUSINESS, page: () => const CalfBusinessView(), binding: CalfBusinessBinding()),
 
     // 业务登记二级页面路由
     GetPage(
