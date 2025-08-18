@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../widgets/sub_page_appbar.dart';
 import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../theme/app_theme.dart';
@@ -10,12 +11,9 @@ class BatchEntryView extends GetView<BatchEntryController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('批量入场'),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: controller.goBack,
-        ),
+      appBar: SubPageAppBar(
+        title: '批量入场',
+        onBackPressed: controller.goBack,
         actions: [
           IconButton(
             icon: const Icon(Icons.save),

@@ -86,14 +86,23 @@ class LoginView extends GetView<LoginController> {
                   ),
                 )),
                 SizedBox(height: 32.h),
-                SizedBox(
+                Obx(() => SizedBox(
                   width: double.infinity,
                   height: 50.h,
                   child: ElevatedButton(
-                    onPressed: controller.login,
-                    child: const Text('登录'),
+                    onPressed: controller.isLoading.value ? null : controller.login,
+                    child: controller.isLoading.value
+                        ? const SizedBox(
+                            width: 24,
+                            height: 24,
+                            child: CircularProgressIndicator(
+                              strokeWidth: 2,
+                              valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                            ),
+                          )
+                        : const Text('登录'),
                   ),
-                ),
+                )),
               ],
             ),
           ),

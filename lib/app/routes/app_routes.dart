@@ -110,4 +110,7 @@ abstract class Routes {
   // 在线问诊相关路由
   static const CONSULTATION_LIST = '/home/consultation/list';
   static const CONSULTATION_PUBLISH = '/home/consultation/publish';
+
+  // 个人中心相关路由
+  static const USER_INFO = '/profile/user-info';
 }

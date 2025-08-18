@@ -49,6 +49,10 @@ import '../modules/home/sub_pages/consultation/consultation_list/consultation_li
 import '../modules/home/sub_pages/consultation/consultation_list/consultation_list_view.dart';
 import '../modules/home/sub_pages/consultation/consultation_publish/consultation_publish_binding.dart';
 import '../modules/home/sub_pages/consultation/consultation_publish/consultation_publish_view.dart';
+
+// 个人中心相关页面
+import '../modules/profile/sub_pages/user_info/user_info_binding.dart';
+import '../modules/profile/sub_pages/user_info/user_info_view.dart';
 import '../modules/home/sub_pages/analysis/cattle_structure/cattle_structure_binding.dart';
 import '../modules/home/sub_pages/analysis/cattle_structure/cattle_structure_view.dart';
 import '../modules/home/sub_pages/analysis/cattle_analysis/cattle_analysis_binding.dart';
@@ -109,7 +113,7 @@ import '../modules/home/sub_pages/business/calf_business/calf_business_view.dart
 part 'app_routes.dart';
 
 abstract class AppPages {
-  static const INITIAL = Routes.MAIN;
+  static const INITIAL = Routes.LOGIN;
   
   static final pages = [
     GetPage(
@@ -269,6 +273,13 @@ abstract class AppPages {
       name: Routes.CONSULTATION_PUBLISH,
       page: () => const ConsultationPublishView(),
       binding: ConsultationPublishBinding(),
+    ),
+
+    // 个人中心相关页面
+    GetPage(
+      name: Routes.USER_INFO,
+      page: () => const UserInfoView(),
+      binding: UserInfoBinding(),
     ),
   ];
 }

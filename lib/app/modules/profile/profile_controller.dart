@@ -1,16 +1,17 @@
 import 'package:get/get.dart';
+import '../../routes/app_pages.dart';
 
 class ProfileController extends GetxController {
-  final userName = '张磊'.obs;
-  final companyName = '中禾恒瑞（内蒙古）农牧业发展有限公司'.obs;
-  final lastUpdateTime = '2025-07-25 11:09:0'.obs;
+  final userName = '-'.obs;
+  final companyName = '-'.obs;
+  final lastUpdateTime = '-'.obs;
 
   final menuItems = [
     {
       'title': '个人信息',
       'icon': 'person',
       'color': 0xFF4CAF50,
-      'route': '/profile/info',
+      'route': Routes.USER_INFO,
     },
     {
       'title': '修改密码',
@@ -58,8 +59,9 @@ class ProfileController extends GetxController {
   ].obs;
 
   void onMenuItemTap(Map<String, dynamic> item) {
-    // TODO: 实现菜单项点击处理
-    Get.snackbar('提示', '点击了${item['title']}');
+    if (item['route'] != null) {
+      Get.toNamed(item['route']);
+    }
   }
 
   void logout() {
