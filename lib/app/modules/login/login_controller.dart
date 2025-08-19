@@ -5,7 +5,7 @@ import '../../core/utils/storage_util.dart';
 
 class LoginController extends GetxController {
   final AuthService _authService = AuthService();
-  final usernameController = TextEditingController(text: 'ry');
+  final usernameController = TextEditingController(text: 'admin');
   final passwordController = TextEditingController(text: 'admin123');
   final isPasswordVisible = false.obs;
 

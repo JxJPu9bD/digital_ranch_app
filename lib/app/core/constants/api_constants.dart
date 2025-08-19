@@ -49,4 +49,16 @@ class ApiConstants {
   static const String analysisDaily = '/analysis/daily';
   static const String analysisMonthly = '/analysis/monthly';
   static const String analysisYearly = '/analysis/yearly';
+
+  // 业务登记相关
+  // 入场登记 ~ 新增牛只
+  static const String entryRecord = '/husbandry/baseInfo';
+  // 批量入场登记
+  static const String batchEntry = '/husbandry/baseInfo/batch';
+  // 离场登记
+  static const String exitRecord = '/husbandry/cattleOutboundOrder/leave';
+  // 转场登记
+  static const String transferRecord = '/husbandry/cattleOutboundOrder/transfer';
+  // 入场记录列表
+  static const String entryRecords = '/husbandry/baseInfo/list';
 }
